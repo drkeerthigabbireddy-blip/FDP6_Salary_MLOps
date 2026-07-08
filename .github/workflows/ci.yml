@@ -9,7 +9,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest #github offers free service for unbuntu
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout Repository
@@ -21,9 +21,14 @@ jobs:
           python-version: "3.11"
 
       - name: Install Dependencies
-        run: | #pipe operator
+        run: |
           pip install -r requirements.txt
-
+      - Install Pytest
+        run: |
+          pip install pytest
+      - Install Run API Tests
+        run: |
+          pytest tests/
       - name: Verify Imports
         run: |
           python -c "import fastapi"
