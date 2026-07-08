@@ -27,7 +27,7 @@ jobs:
         run: |
           pip install pytest
           pip install app
-      - Install Run API Tests
+      - name: Install Run API Tests
         run: |
           pytest tests/
       - name: Verify Imports
