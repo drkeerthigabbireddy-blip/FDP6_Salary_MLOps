@@ -11,5 +11,4 @@ matplotlib
 joblib
 pydantic
 python-multipart
-request
-streamlit
+requests
