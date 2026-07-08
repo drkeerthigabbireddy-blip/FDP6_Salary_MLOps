@@ -45,7 +45,7 @@ experience = st.number_input(
     value=5
 )
 
-API_URL = "https://YOUR_RENDER_URL.onrender.com/predict"
+API_URL = "https://fdp6-salary-mlops-2.onrender.com/predict"
 
 if st.button("Predict Salary"):
 
